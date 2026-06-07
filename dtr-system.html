@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standalone DTR System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="project-detail">
+
+<h1>Standalone DTR System</h1>
+
+<div class="glass card">
+
+<h2>Overview</h2>
+
+<p>
+The Standalone DTR System was developed as a supplementary attendance management solution designed to support an existing web-based DTR system.
+</p>
+
+<p>
+Although the organization already had an online attendance platform, there were instances where attendance records appeared blank or were not properly recorded despite successful employee logins.
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h2>Problem It Solves</h2>
+
+<p>
+Because attendance records occasionally failed to appear in the online system, employees often maintained manual attendance logs as a backup reference.
+</p>
+
+<p>
+To reduce reliance on manual record keeping, I developed a standalone DTR application capable of generating attendance reports and providing an additional layer of attendance verification.
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h2>Graveyard Shift Logic</h2>
+
+<p>
+One of the major challenges was supporting overnight schedules.
+</p>
+
+<p>
+The system correctly handles shifts that cross midnight by recognizing that the employee's Time In and Time Out belong to the same work schedule.
+</p>
+
+<ul>
+<li>Time In: 10:00 PM</li>
+<li>Time Out: 7:00 AM (Next Day)</li>
+</ul>
+
+<p>
+Instead of splitting the attendance into two separate dates, the system calculates the total working hours as a single shift.
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h2>Features</h2>
+
+<ul>
+<li>Backup attendance recording</li>
+<li>Attendance verification</li>
+<li>Date range reporting</li>
+<li>Graveyard shift support</li>
+<li>Employee attendance history</li>
+<li>Export to Microsoft Excel</li>
+<li>Export to Microsoft Word</li>
+<li>Printable attendance reports</li>
+</ul>
+
+</div>
+
+<a href="index.html#projects" class="btn">
+Back to Projects
+</a>
+
+</section>
+
+</body>
+</html>
